@@ -6,7 +6,7 @@ contentDiv.append(rowElement);
 function search(){
  let val = document.querySelector(".t").value;
 
-let response = fetch("http://api.giphy.com/v1/gifs/search?q="+val+"&api_key=ujbjaICHmqVM8SvIs2OZkfzl9EhR9QFI&limit=20")
+let response = fetch("https://api.giphy.com/v1/gifs/search?q="+val+"&api_key=ujbjaICHmqVM8SvIs2OZkfzl9EhR9QFI&limit=20")
 
 response.then((val)=>{
     return val.json();
